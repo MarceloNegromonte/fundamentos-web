@@ -30,10 +30,11 @@
             <div id='txtEmail'></div>
             <br>
             <label for="assunto">Assunto:</label> <br>
-            <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+            <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+            <div id='txtAssunto'></div>
             <br>
             <br>
-            <button>Enviar</button>
+            <button onclick="enviar()">Enviar</button>
         </form>
     
         <div class="ml-50">
@@ -43,7 +44,9 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.227872530431!2d-34.
             838953185220674!3d-7.9753848942559475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
             1!3m3!1m2!1s0x7ab3d0c417b7973%3A0xb39bba264841888a!2sR.
-            %20Catulo%20da%20Paix%C3%A3o%20Cearense%20-%20Jardim%20Atl%C3%A2ntico%2C%20Olinda%20-%20PE!5e0!3m2!1spt-BR!2sbr!4v1637772942396!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            %20Catulo%20da%20Paix%C3%A3o%20Cearense%20-%20Jardim%20Atl%C3%A2ntico%2C%20Olinda%20-%20PE!5e0!3m2!1spt-BR!2sbr!4v1637772942396!5m2!1spt-BR!2sbr"
+            width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" onmousemove="mapaZoom()"
+            onmouseout="mapaNormal()" id='mapa'></iframe>
         </div>
     
     </div>
